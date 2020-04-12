@@ -18,7 +18,6 @@ export class NotesComponent implements OnInit {
 
     @HostListener('window:scroll')
     checkScroll() {
-
         const scrollPosition = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
 
         console.log('[scroll]', scrollPosition);
@@ -49,7 +48,6 @@ export class NotesComponent implements OnInit {
         // tslint:disable-next-line: one-variable-per-declaration
         const time: number = new Date().getTime(),
         { title, content } = e;
-
         this.notes.unshift({
             id: time,
             time,

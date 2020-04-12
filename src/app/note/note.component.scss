@@ -24,13 +24,13 @@
           display: block;
           color: #1b2733;
           font-weight: 600;
-          position: relative;
+          position: inherit;
           top: 2px;
         }
         & .note_time{
           font-size: 13px;
           color: #66757f;
-          position: relative;
+          position: inherit;
           top: -1px;
         }
       }
@@ -47,6 +47,7 @@
         text-align: center;
         padding-top: inherit;
         & .delete_button {
+            position: inherit !important;
             color: #66757f;
             background: #efefef;
         }

@@ -1,7 +1,11 @@
 .create_note{
-    position: relative;
-    width: 40%;
-    margin-left: 30%;
+    position: absolute;
+    width: 80%;
+    height: 40%;
+    margin-left: 10%;
+    & .span {
+        background-color: #ffff;
+    }
     & input[type='text'], & textarea{
         padding: 7px !important;
         width: 94%;

@@ -1,0 +1,13 @@
+<div class="notes">
+    <div>
+        <span>{{ notes.length }} Notes</span>
+        <button mat-flat-button (click)="toggle($event)">Create note</button>
+        <input class="form-control" type="text" name="search" [(ngModel)]="searchText" autocomplete="off" placeholder="Start searching">
+    </div>
+    <app-popup [visible]="true" *ngIf="create"></app-popup>
+    <app-create-note *ngIf="create" (onBack)="toggle($event)" (onCreateNote)="createNote($event)"></app-create-note>
+    <div *ngFor="let note of notes | search:searchText">
+        <app-note [note]="note" (onDelete)="deleteNote($event)"></app-note>
+    </div>
+    <button *ngIf="isShow" (click)="gotoTop()">👆</button>
+</div>

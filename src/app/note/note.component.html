@@ -1,0 +1,17 @@
+<div>
+    <div class="note">
+        <div>
+            <div class="note_header">
+                <div class="note_h_left">
+                    <span class="note_username">Your Note</span>
+                    <span class="note_time">{{note.time | date: 'short'}}</span>
+                </div>
+            </div>
+            <div class="note_title">{{ note.title }}</div>
+            <div class="note_content">{{ note.content }}</div>
+        </div>
+        <div class="v_n_bottom">
+            <button mat-flat-button  class="delete_button" (click)="deleteNote($event)">Delete Note</button>
+        </div>
+    </div>
+</div>

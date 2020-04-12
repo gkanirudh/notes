@@ -1,0 +1,54 @@
+.note{
+    background: #fff;
+    padding: 10px;
+    display: block;
+    font-size: 14px;
+    border: 1px solid #f7f5f5;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    &:hover{ border-color: #eee; }
+    & .note_header{
+      margin-bottom: 7px;
+      & img{
+        height: 31px;
+        width: 31px;
+        border-radius: 50%;
+        display: inline-block;
+      }
+      & .note_h_left{
+        display: inline-block;
+        width: 90%;
+        & .note_username{
+          display: block;
+          color: #1b2733;
+          font-weight: 600;
+          position: relative;
+          top: 2px;
+        }
+        & .note_time{
+          font-size: 13px;
+          color: #66757f;
+          position: relative;
+          top: -1px;
+        }
+      }
+    }
+    & .note_title, & .note_content{ color: #1b2733; }
+    & .note_title{
+      margin-bottom: 4px;
+      font-weight: 600;
+    }
+    & .v_n_bottom {
+        @media screen and (max-width: 450px){
+            float: right;
+        }
+        text-align: center;
+        padding-top: inherit;
+        & .delete_button {
+            color: #66757f;
+            background: #efefef;
+        }
+    }
+}

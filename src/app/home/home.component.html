@@ -1,0 +1,22 @@
+<mat-toolbar color="primary"
+             class="toolbar"
+             role="heading">
+    <button mat-icon-button
+            (click)="sidebar.toggle()">
+        <mat-icon>menu</mat-icon>
+    </button>
+</mat-toolbar>
+<mat-drawer-container class="example-container"
+                      hasBackdrop="true">
+    <mat-drawer #sidebar
+                class="mat-drawer"
+                mode="push">
+        <div *ngFor="let note of notes; let i=index">
+            <button class='button' mat-flat-button>{{i+1}}. {{note.title}}</button>
+        </div>
+    </mat-drawer>
+    <mat-drawer-content class="drawer-content">
+        <h1 class="h1">My Notes</h1>
+        <app-notes></app-notes>
+    </mat-drawer-content>
+</mat-drawer-container>

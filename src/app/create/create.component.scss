@@ -1,0 +1,19 @@
+.create_note{
+    position: relative;
+    width: 40%;
+    margin-left: 30%;
+    & input[type='text'], & textarea{
+        padding: 7px !important;
+        width: 94%;
+        font-size: 14px;
+    }
+    & input[type="text"]{ margin-bottom: 9px; }
+    & textarea{ height: 250px; }
+    & .create_note_bottom{
+      margin-top: 1px;
+      text-align: center;
+    }
+    & .submit_button {
+        margin-left: 4px;
+    }
+}

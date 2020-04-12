@@ -1,0 +1,33 @@
+.toolbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+
+.example-container {
+    position: relative;
+    width:100%;
+    top: 55px;
+}
+
+.button {
+    padding-left: 6px;
+}
+
+.mat-drawer {
+    width: 25%;
+    @media screen and (max-width: 420px) {
+        width: 40%;
+    }
+}
+
+.drawer-content {
+    height: 900px;
+}
+
+.h1 {
+    padding-top: 6px;
+    text-align: center;
+}

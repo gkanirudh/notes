@@ -1,0 +1,31 @@
+<div class="create_note">
+    <form (submit)="createNote($event)">
+        <div>
+            <span>Create a note</span>
+        </div>
+        <div>
+            <input type="text"
+                   placeholder='Title..'
+                   [(ngModel)]="note.title"
+                   required
+                   autoComplete="false"
+                   name="title" />
+            <textarea placeholder='Your note..'
+                      required [(ngModel)]="note.content"
+                      autoComplete='false'
+                      name="content">
+            </textarea>
+        </div>
+        <div class="create_note_bottom">
+            <button mat-flat-button
+                    (click)="toggleBack($event)">
+                    Back
+            </button>
+            <button mat-flat-button
+                    class="submit_button"
+                    type="submit">
+                    Submit
+            </button>
+        </div>
+    </form>
+</div>

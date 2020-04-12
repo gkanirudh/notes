@@ -1,0 +1,47 @@
+// .overlay{
+//     position: fixed;
+//     width: 100%;
+//     height: 100%;
+//     top: 0px;
+//     left: 0px;
+//     right: 0px;
+//     bottom: 0px;
+//     background: #000;
+//     opacity: 0.5 !important;
+//     z-index: 1;
+// }
+  
+//   .hidden_overlay{
+//     position: fixed;
+//     width: 100%;
+//     height: 100%;
+//     top: 0px;
+//     left: 0px;
+//     right: 0px;
+//     bottom: 0px;
+//     background: transparent !important;
+//     z-index: 2;
+// }
+.home{
+    position: relative;
+    width: 607px;
+    margin-left: 365px;
+    margin-bottom: 60px;
+    & .home_info{
+      margin-bottom: 10px;
+      background: #fff;
+      padding: 14px 10px;
+      border: 1px solid #0000;
+      border-radius: 3px;
+      font-size: 15px;
+      & a{
+        position: absolute;
+        right: 10px;
+        padding: 4px 12px;
+        top: 10px;
+      }
+    }
+    & .form-control {
+        box-shadow: 0 10px 40px 0 #B0C1D9;
+    }
+}
